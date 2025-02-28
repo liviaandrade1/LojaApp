@@ -5,24 +5,36 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
-    <com.google.android.material.progressindicator.LinearProgressIndicator
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:indeterminate="true" />
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
         android:scaleType="centerCrop"
         android:src="@drawable/logo" />
 
-    <TextureView
+    <TextView
+        android:shadowColor="#685D5D"
+        android:shadowRadius="10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Loja do pink pig" />
+        android:layout_gravity="center_horizontal"
+        android:text="Loja do big pink pig"
+        android:textSize="30sp"
+        android:textColor="#C677AA"
+        android:textStyle="bold" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:indeterminate="true" />
 
 </LinearLayout>
